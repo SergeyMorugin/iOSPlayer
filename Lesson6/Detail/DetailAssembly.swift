@@ -5,7 +5,8 @@ struct DetailAssembly {
   static func assemble(artistId: Int) -> UIViewController {
     let view = DetailViewController()
     let presenter = DetailPresenter()
-    let interactor = DetailInteractor(artistId: artistId)
+    let networkService = NetworkService()
+    let interactor = DetailInteractor(artistId: artistId, networkService: networkService)
     let router = DetailRouter()
 
     view.output = presenter
