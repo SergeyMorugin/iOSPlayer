@@ -3,7 +3,7 @@ import UIKit
 final class DetailViewController: UIViewController {
 
   var output: DetailViewOutput?
-  var router: DetailRouterInput?
+  
   private let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
 
   private var tableContents: DetailViewModel?

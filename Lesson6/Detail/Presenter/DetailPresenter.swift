@@ -4,6 +4,7 @@ final class DetailPresenter {
 
   weak var view: DetailViewInput?
   var interactor: DetailInteractorInput?
+  var router: DetailRouterInput?
 
   private lazy var dateFormatter: DateFormatter = createDateFormatter()
 }

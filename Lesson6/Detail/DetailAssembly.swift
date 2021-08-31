@@ -9,8 +9,8 @@ struct DetailAssembly {
     let router = DetailRouter()
 
     view.output = presenter
-    view.router = router
     presenter.view = view
+    presenter.router = router
     presenter.interactor = interactor
     interactor.output = presenter
 
